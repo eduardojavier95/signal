@@ -1,0 +1,16 @@
+[project]
+name = "signal-py"               # ← nombre público (guion, no guión bajo)
+version = "0.1.0"
+description = "Señales reactivas estilo Angular en Python"
+authors = [{name = "Eduardo", email = "emporto95@gmail.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [{include = "signal_py", from = "src"}]   # ← coincide con la carpeta
